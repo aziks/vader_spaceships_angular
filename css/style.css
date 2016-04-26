@@ -37,9 +37,17 @@ a {
 
   }
 
+h1{
+  color:#BF0D00 !important;
+}
+
 h2 {
   line-height: 1.2;
   margin-bottom: 1.6rem;
+}
+
+hr{
+  border-top: 1px solid #BF0D00; 
 }
 
 .wrapper {
@@ -47,6 +55,10 @@ h2 {
   margin: 50px auto;
   padding-left: 1em;
   padding-right: 1em;
+}
+
+.jumbotron{
+  background-color: black;
 }
 
 .navbar-default {
@@ -58,6 +70,13 @@ h2 {
 .navbar-right {
   float: right!important;
   margin-right: 0px; 
+}
+
+.order{
+  float: left;
+  padding-top: 12px;
+  padding-left: 20px;
+  border-style: none;
 }
 
 /**
@@ -249,3 +268,4 @@ h2 {
 .social_icon{
   margin-left: 20px;
 }
+

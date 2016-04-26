@@ -73,9 +73,16 @@
 
     <div class="row">
       <nav class="navbar navbar-default">
+        <div class="order">
+          Order by:
+          <select ng-model="orderProp">
+              <option value="name">Alphabetical</option>
+              <option value="date">Newest</option>
+          </select>
+        </div>
         <form class="navbar-form navbar-right" role="search">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
+            <input type="text" class="form-control" placeholder="Search" ng-model="query">
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
@@ -83,10 +90,10 @@
     </div>
 
     <div class="row">
-      <div class="col-sm-6 col-md-3" ng-repeat="spaceship in spaceships">
+      <div class="col-sm-6 col-md-3" ng-repeat="spaceship in spaceships | filter:query | orderBy:orderProp">
         <div class="card radius shadowDepth1">
           <div class="card__image border-tlr-radius">
-            <img src="{{spaceship.imgUrlkey}}" alt="image" class="border-tlr-radius">
+            <img ng-src="{{spaceship.imgUrlkey}}" alt="{{spaceship.name}}" class="border-tlr-radius">
           </div>
 
           <div class="card__content card__padding">

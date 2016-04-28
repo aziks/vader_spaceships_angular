@@ -1,9 +1,11 @@
 [
   {
+    "id":          0,
     "name":        "Defender",
     "color":       "black",
     "hp":          3500,
     "fuel":        30,
+    "category":    "Small Figther",
     "date":        "2016-01-23T18:25:43.511Z",
     "lat":         "33.3936955",
     "lng":         "-104.5230833",
@@ -12,10 +14,12 @@
     "comment":      "..."
   },
   {
+    "id":          1,
     "name":        "First Order",
     "color":       "dark grey",
     "hp":          2500,
     "fuel":        30,
+    "category":    "Small Figther",
     "date":        "2009-07-14T18:25:43.511Z",
     "lat":         "40.4169149",
     "lng":         "-3.7035676",
@@ -24,10 +28,12 @@
     "comment":      "..."
   },
   {
+    "id":          2,
     "name":        "OT",
     "color":       "white",
     "hp":          3000,
     "fuel":        30,
+    "category":    "Transport",
     "date":        "2013-11-20T18:25:43.511Z",
     "lat":         "35.6808126",
     "lng":         "139.7666296",
@@ -36,10 +42,12 @@
     "comment":      "..."
   },
   {
+    "id":          3,
     "name":        "Destroyer",
     "color":       "grey",
     "hp":          9000,
     "fuel":        90,
+    "category":    "Mothership",
     "date":        "2010-09-03T18:25:43.511Z",
     "lat":         "15.6808126",
     "lng":         "339.7666296",

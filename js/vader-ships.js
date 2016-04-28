@@ -1,10 +1,20 @@
-var VaderShips = angular.module('VaderShips', []);
+var VaderShips = angular.module('VaderShips', [
+  'ngRoute',
+  'VaderShipsControllers'
+]);
 
-VaderShips.controller('MainCtrl', function ($scope, $http) {
-  $http.get('js/spaceships.json').success(function (data) {
-    $scope.spaceships = data;
-  }); 
-
-  $scope.orderProp = 'date';
-
-});
+VaderShips.config(['$routeProvider',
+  function($routeProvider) {
+    $routeProvider.
+      when('/spaceships', {
+        templateUrl: 'partials/spaceships-list.html',
+        controller: 'SpaceshipsListCtrl'
+      }).
+      when('/spaceships/:spaceshipId', {
+        templateUrl: 'partials/spaceship-detail.html',
+        controller: 'SpaceshipDetailCtrl'
+      }).
+      otherwise({
+        redirectTo: '/spaceships'
+      });
+  }]);

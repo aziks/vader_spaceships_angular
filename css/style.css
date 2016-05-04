@@ -61,6 +61,13 @@ hr{
   background-color: black;
 }
 
+.spaceship_name{
+    background: black;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
 .navbar-default {
   background-color: #000000;
   border-radius: 0px;

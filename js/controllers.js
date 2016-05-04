@@ -1,17 +1,22 @@
 var VaderShipsControllers = angular.module('VaderShipsControllers', []);
 
-VaderShipsControllers.controller('SpaceshipsListCtrl', ['$scope', '$http',
+VaderShipsControllers.controller('SpaceshipsListCtrl', ['$scope', 'Spaceship',
 
-  function ($scope, $http) {
+  function ($scope, Spaceship) {
+    $scope.spaceships = Spaceship.query();
+    $scope.orderProp = 'date';
 
-    $http.get('js/spaceships.json').success(function (data) {
-      $scope.spaceships = data;
-    }); 
-
-  $scope.orderProp = 'date';
 }]);
 
-VaderShipsControllers.controller('SpaceshipDetailCtrl', ['$scope', '$routeParams',
-  function ($scope, $routeParams) {
-    $scope.spaceshipId = $routeParams.spaceshipId;
+VaderShipsControllers.controller('SpaceshipDetailCtrl', ['$scope', '$routeParams', 'Spaceship', 
+  function ($scope, $routeParams, Spaceship) {
+    $scope.spaceship = Spaceship.get({spaceshipId: $routeParams.spaceshipId},
+      function (spaceship) {
+        $scope.mainImageUrl = spaceship.images[0];
+    });
+
+    $scope.setImage = function (imageUrl) {
+      $scope.mainImageUrl = imageUrl;
+    }
+
 }]);

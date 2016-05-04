@@ -1,6 +1,13 @@
 <div class="container">
+  <div class="row spaceship_name">
+    <h2>{{spaceship.name}}</h2>
+  </div>
   <div class="row">
-    TBD: detail view for <span>{{spaceshipId}}</span>
-    <h3>{{spaceship.name}}</h3>
+    <div class="col-xs-12 col-sm-6 col-md-6">
+      <img ng-src="{{spaceship.images[0]}}">
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <p>{{spaceship.description}}</p>
+    </div>
   </div>
 </div>

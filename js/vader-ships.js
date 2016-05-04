@@ -1,5 +1,6 @@
 var VaderShips = angular.module('VaderShips', [
   'ngRoute',
+  'VaderShipsServices',
   'VaderShipsControllers'
 ]);
 

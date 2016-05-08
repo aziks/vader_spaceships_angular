@@ -1,0 +1,19 @@
+{
+  "id":          "destroyer_3",
+  "name":        "Destroyer",
+  "color":       "grey",
+  "hp":          9000,
+  "fuel":        90,
+  "category":    "Mothership",
+  "date":        "2010-09-03T18:25:43.511Z",
+  "lat":         "15.6808126",
+  "lng":         "339.7666296",
+  "description": "The Destroyer of worlds",
+  "images": [
+    "img/phones/nexus-s.0.jpg",
+    "img/phones/nexus-s.1.jpg",
+    "img/phones/nexus-s.2.jpg",
+    "img/phones/nexus-s.3.jpg"
+  ], 
+  "comment":      "..."
+}

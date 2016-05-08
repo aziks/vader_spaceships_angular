@@ -1,0 +1,19 @@
+{
+  "id":          "defender_0",
+  "name":        "Defender",
+  "color":       "black",
+  "hp":          3500,
+  "fuel":        30,
+  "category":    "Small Figther",
+  "date":        "2016-01-23T18:25:43.511Z",
+  "lat":         "33.3936955",
+  "lng":         "-104.5230833",
+  "description": "The best fighter",
+  "images": [
+    "img/spaceships/TIE_Defender.png",
+    "img/phones/nexus-s.1.jpg",
+    "img/phones/nexus-s.2.jpg",
+    "img/phones/nexus-s.3.jpg"
+  ],
+  "comment":      "..."
+}

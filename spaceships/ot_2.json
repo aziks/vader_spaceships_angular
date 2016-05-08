@@ -1,0 +1,19 @@
+{
+  "id":          "ot_2",
+  "name":        "OT",
+  "color":       "white",
+  "hp":          3000,
+  "fuel":        30,
+  "category":    "Transport",
+  "date":        "2013-11-20T18:25:43.511Z",
+  "lat":         "35.6808126",
+  "lng":         "139.7666296",
+  "description": "The classic fighter",
+  "images": [
+    "img/phones/nexus-s.0.jpg",
+    "img/phones/nexus-s.1.jpg",
+    "img/phones/nexus-s.2.jpg",
+    "img/phones/nexus-s.3.jpg"
+  ], 
+  "comment":      "..."
+}

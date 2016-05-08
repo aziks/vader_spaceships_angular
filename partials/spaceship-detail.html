@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row spaceship_name">
+    <h2>{{spaceship.name}}</h2>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4 spaceship_box">
+      <div class="img_container">
+        <img class="__img" ng-src="{{spaceship.images[0]}}">
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-6 col-md-offset-2 spaceship_box">
+      <p>Description:</p>
+      <p>{{spaceship.description}}</p>
+      <hr>
+      <p>Color:</p>
+      <p>{{spaceship.color}}</p>
+      <hr>
+      <p>HP:</p>
+      <p>{{spaceship.hp}}</p>
+      <hr>
+      <p>Fuel:</p>
+      <p>{{spaceship.fuel}}</p>
+      <hr>
+      <p>Comments:</p>
+      <p>{{spaceship.comment}}</p>
+    </div>
+  </div>
+</div>
